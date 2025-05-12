@@ -9,6 +9,11 @@ const question1Screen = document.getElementById('question1-screen');
 const question2Screen = document.getElementById('question2-screen');
 const loveScreen = document.getElementById('love-screen');
 
+function getRandomGif() {
+  const index = Math.floor(Math.random() * gifs.length);
+  return gifs[index];
+};
+
 document.getElementById('check-password').addEventListener('click', function() {
     const password = document.getElementById('password-input').value;
     const requiredDigits = ['9', '2', '3', '6', '3', '1'];
@@ -48,7 +53,7 @@ document.getElementById('check-factorial').addEventListener('click', function() 
 });
 
 document.getElementById('yesBtn').addEventListener('click', function() {
-    const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+    let randomGif = getRandomGif();
     document.getElementById('cat-gif').src = randomGif;
     document.getElementById('gif-container').classList.remove('hidden');
     
