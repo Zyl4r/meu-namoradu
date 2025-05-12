@@ -60,3 +60,27 @@ button:hover {
     color: #ff4d6d;
     margin-top: 10px;
 }
+.poem {
+    margin-top: 30px;
+    text-align: left;
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #fff9fa;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #ff4d6d;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.poem p {
+    margin-bottom: 15px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#poem-container {
+    animation: fadeIn 2s ease-in;
+}
