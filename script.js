@@ -1,5 +1,4 @@
- 
- const gifs = [
+const gifs = [
     "https://media.tenor.com/gjTjxUCoP3sAAAAj/jumping-gatito.gif", 
     "https://media.tenor.com/7_KRHOBcSnEAAAAM/happy-birthday-ashleigh.gif",
     "https://media.tenor.com/0M73ED2klXAAAAAM/seal-seals.gif"
@@ -54,6 +53,11 @@ document.getElementById('yesBtn').addEventListener('click', function() {
     document.getElementById('gif-container').classList.remove('hidden');
     
     document.querySelector('.love-buttons').style.display = 'none';
+    
+    setTimeout(function() {
+        document.getElementById('poem-container').classList.remove('hidden');
+        document.getElementById('poem-container').scrollIntoView({ behavior: 'smooth' });
+    }, 3000);
 });
 
 let noAttempts = 0;
