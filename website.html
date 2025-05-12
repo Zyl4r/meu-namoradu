@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>❤️ Para Você ❤️</title>
+</head>
+<body>
+    <div class="container" id="password-screen">
+        <h1>❤️ Entrada Especial ❤️</h1>
+        <p>Digite a senha para continuar:</p>
+        <input type="password" id="password-input" placeholder="Digite a senha...">
+        <p class="error" id="password-error"></p>
+        <button id="check-password">Entrar</button>
+    </div>
+
+    <div class="container hidden" id="question1-screen">
+        <h1>Primeira pergunta</h1>
+        <p>Qual foi a minha pontuação na prova?</p>
+        <input type="number" id="score-input" placeholder="Digite a pontuação...">
+        <p class="error" id="score-error"></p>
+        <button id="check-score">Verificar</button>
+    </div>
+
+    <div class="container hidden" id="question2-screen">
+        <h1>Segunda pergunta</h1>
+        <p>Quanto é 15% de 100 fatorial? (Digite o número exato)</p>
+        <input type="text" id="factorial-input" placeholder="Digite o número completo...">
+        <p class="error" id="factorial-error"></p>
+        <button id="check-factorial">Verificar</button>
+    </div>
+
+    <div class="container hidden" id="love-screen">
+        <h1>Pergunta importante ❤️</h1>
+        <h2>Vc me ama?</h2>
+        <div class="love-buttons">
+            <button id="yesBtn">Sim</button>
+            <button id="noBtn">Não</button>
+        </div>
+        <div id="gif-container" class="hidden">
+            <img id="cat-gif" src="" alt="Gato fofo dançando">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
